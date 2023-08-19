@@ -1,0 +1,24 @@
+<!--This FXML file represents the graphical user interface layout for the ActionsGUI class.
+    It contains buttons for encryption, decryption, brute force decryption, and navigation back.
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0"
+            xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ActionsGUI">
+
+    <!-- Button for encryption -->
+    <Button layoutX="50.0" layoutY="50.0" text="Зашифровать" onAction="#onEncryptButtonClicked"/>
+
+    <!-- Button for decryption -->
+    <Button layoutX="150.0" layoutY="50.0" text="Расшифровать" onAction="#onDecryptButtonClicked" />
+
+    <!-- Button for brute force decryption -->
+    <Button layoutX="100.0" layoutY="100.0" text="Brute Force" onAction="#onBruteForceButtonClicked" />
+
+    <!-- Button for navigation back -->
+    <Button layoutX="100.0" layoutY="150.0" text="Назад" onAction="#onBackButtonClicked" />
+
+</AnchorPane>
